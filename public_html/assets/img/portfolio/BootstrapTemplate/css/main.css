@@ -1,0 +1,38 @@
+.navbar-brand{
+	  	font-size: 1.8em;
+	  	color:white;
+	  }
+
+	  .navbar-default{
+	  	background: #F2EFE1;
+	  }
+	  
+	   .carousel-caption{
+	   	font-size: 2em;
+	   }
+
+	   .btn-default{
+	   	float:center;
+	   }
+
+	   #details{
+	   	display:block;
+	   	margin:auto;
+	   }
+
+	   body{
+	  background: #D1EAD7;
+
+
+
+	   }
+
+	   #submit{
+
+	   	margin-top:2px;
+
+	   }
+
+	   hr{
+	   	color:black;
+	   }

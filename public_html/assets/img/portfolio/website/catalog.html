@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   
+   <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+   <style type="text/css">a {text-decoration: none}</style>
+</head>
+<body>
+  <title></title>
+  <div class="header">
+    <div class = "logo">
+      <a href= "index.html"> <img src="img/dk~gaming.gif"></a>
+    </div>
+    <div class="navHolder">
+    </div>
+  </div>
+  <div class ="links">    
+      <ul>
+        <li><a href = 'aboutme.html'>About Me </a></li>
+        <li><a href = 'faq.html'> FAQs </a></li>
+        <li><a href = 'whatsNew.html'>What's New </a></li>
+        <li><a href = 'projects.html'>Gallery </a></li>
+        <li><a href = 'product.html'>Product Information </a></li>
+        <li><a href = 'catalog.html'>Catalog of Products </a></li>
+      </ul>
+  </div>
+  <div class="container">
+    <script type="text/javascript">
+  function Coaching(games, sessions, price) {
+    this.games = games;
+    this.sessions = sessions;
+    this.price = price;  
+  }
+</script>
+</head>
+<body>
+<script type="text/javascript">
+
+  var session1 = new Coaching(1, 5, "$50");
+  var session2 = new Coaching(1, 10, "$90");
+  var session3 = new Coaching(2, 5, "$60");
+  var session4 = new Coaching(2, 10, "$100");
+  var session5 = new Coaching(3, 5, "$70");
+  var session6 = new Coaching(3, 10, "$115");
+
+function displayCoaching(){
+  document.write("Games: "+ this.games + "<br> " + "Coaching Sessions: "+ this.sessions + "<br>"+ "Price: " + this.price + "<br>");
+  }
+
+  session1.display = displayCoaching;
+  session2.display = displayCoaching;
+  session3.display = displayCoaching;
+  session4.display = displayCoaching;
+  session5.display = displayCoaching;
+  session6.display = displayCoaching;
+ 
+</script>
+  
+<style>
+  table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align:center;
+  }
+  th, td {
+      padding: 5px;
+  }
+</style>
+
+<table style="width:100%">
+  <tr>
+    <th>Games</th>
+    <th>Coaching Sessions</th>   
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td><script>document.write(session1.games);</script></td>
+    <td><script>document.write(session1.sessions);</script></td>   
+    <td><script>document.write(session1.price);</script></td>
+  </tr>
+   <tr>
+    <td><script>document.write(session2.games);</script></td>
+    <td><script>document.write(session2.sessions);</script></td>   
+    <td><script>document.write(session2.price);</script></td>
+  </tr>
+  <tr>
+    <td><script>document.write(session3.games);</script></td>
+    <td><script>document.write(session3.sessions);</script></td>   
+    <td><script>document.write(session3.price);</script></td>
+  </tr>
+  <tr>
+    <td><script>document.write(session4.games);</script></td>
+    <td><script>document.write(session4.sessions);</script></td>   
+    <td><script>document.write(session4.price);</script></td>
+  </tr>
+  <tr>
+    <td><script>document.write(session5.games);</script></td>
+    <td><script>document.write(session5.sessions);</script></td>   
+    <td><script>document.write(session5.price);</script></td>
+  </tr>
+  <tr>
+    <td><script>document.write(session6.games);</script></td>
+    <td><script>document.write(session6.sessions);</script></td>   
+    <td><script>document.write(session6.price);</script></td>
+  </tr>
+  
+</table>
+    
+  </div>
+  <div class="footer">
+      <p>Email me:<a href="kwongdarren@gmail.com">kwongdarren@gmail.com</a>    </p>
+      <a href="https://www.facebook.com/kwongdarren"> <img src="img/facebook.png"></a>
+  </div>
+  
+</body>
+
+
+</html>

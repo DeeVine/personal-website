@@ -1,0 +1,62 @@
+.gameImages img{
+  margin: 10px;
+}
+
+.header:after {
+content: "";
+display: block;
+clear: both;
+}
+
+.logo{
+  width:100px;
+  float: left;
+  margin-left: 50px;
+}
+
+.navHolder{
+  float: left;
+  width:85%;
+  margin-top: 50px;
+  border-top: solid #f27d7d;
+  background-color: ;
+}
+
+.links{
+  float: right;
+  margin-right: 100px;
+  display: inline-block;
+  font-family: Helvetica;
+  font-size: 18px; 
+}
+
+.container{
+   margin: auto;
+   max-width: 1024px;
+}
+
+body{
+  font-family: helvetica;
+}
+
+#intro {
+  margin: 200px 50px 200px 50px;
+  font-family:Helvetica;
+  font-size:36px;
+}
+
+ul li{
+  list-style-type:none;
+  display:inline;
+  margin:0px 20px;
+}
+
+ul li a{ 
+  color: black; 
+}
+
+.footer{
+  float:center;
+  text-align: center;
+  margin-top: 15%;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   
+   <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+   <style type="text/css">a {text-decoration: none}</style>
+</head>
+<body>
+  <title></title>
+  <div class="header">
+    <div class = "logo">
+      <a href= "index.html"> <img src="img/dk~gaming.gif"></a>
+    </div>
+    <div class="navHolder">
+    </div>
+  </div>
+  <div class ="links">    
+      <ul>
+        <li><a href = 'aboutme.html'>About Me </a></li>
+        <li><a href = 'faq.html'> FAQs </a></li>
+        <li><a href = 'whatsNew.html'>What's New </a></li>
+        <li><a href = 'projects.html'>Gallery </a></li>
+        <li><a href = 'product.html'>Product Information </a></li>
+        <li><a href = 'catalog.html'>Catalog of Products </a></li>
+      </ul>
+  </div>
+  <div class="container">
+    <script>
+  
+function displayPackage(){
+  document.body.appendChild(this.image);
+  document.write(this.description);
+}
+
+function selectProduct(){
+  var firstName = (prompt("Please enter your name?",""));
+  var lastName = (prompt("Please enter your name?",""));
+  alert("Hello " + firstName + " " + lastName + "I look forward to helping you become a better player!");
+
+  firstName = prompt("Please select option1(1game + 5 coaching sessions) or option2 (2games+10 coaching sessions");
+
+  if(firstName == "1"){
+    package1.display();
+  }
+  else if(firstName == "2"){
+    package2.display();
+  }
+  else {
+    document.write("Sorry, that is an invalid option");
+  }
+}
+
+var img1 = new Image();
+img1.src = 'img/resizedImg/d3.jpg'
+
+var package1 = {};
+package1.image = img1;
+package1.description = "<br>"+ "1 game + 5 coaching sessions for $50" + "<br><br>";
+package1.display = displayPackage;
+
+var img2 = new Image();
+img2.src = 'img/resizedImg/heroes.jpg';
+
+var package2 = {};
+package2.image = img2;
+package2.description = "<br>"+"2 games + 10 coaching sessions for $100" + "<br><br>";
+package2.display = displayPackage;
+
+selectProduct();
+
+</script>
+      
+  </div>
+  <div class="footer">
+      <p>Email me:<a href="kwongdarren@gmail.com">kwongdarren@gmail.com</a>    </p>
+      <a href="https://www.facebook.com/kwongdarren"> <img src="img/facebook.png"></a>
+  </div>
+  
+</body>
+
+
+</html>
